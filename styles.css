@@ -130,6 +130,13 @@ body {
     line-height: 1.7;
 }
 
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -199,6 +206,19 @@ body {
     color: var(--color-text-muted);
     font-size: 1.1rem;
     margin-bottom: 16px;
+}
+
+.about-linkedin {
+    display: inline-block;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 8px;
+    transition: color var(--transition);
+}
+
+.about-linkedin:hover {
+    color: var(--color-accent-hover);
 }
 
 /* Work / Projects */
@@ -333,6 +353,12 @@ body {
 .service-card p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
+}
+
+.services-cta {
+    display: flex;
+    width: fit-content;
+    margin: 48px auto 0;
 }
 
 /* Contact */
