@@ -130,13 +130,6 @@ body {
     line-height: 1.7;
 }
 
-.hero-actions {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 /* Buttons */
 .btn {
     display: inline-flex;
