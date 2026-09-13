@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metis Dev | iOS Development, SwiftUI Migration &amp; Accessibility Audits</title>
-    <meta name="description" content="Metis Dev is an iOS development studio offering native app development, SwiftUI migration, accessibility audits, and AI integration — backed by 12+ years of hands-on iOS engineering experience.">
+    <title>Metis Dev | On-Device AI Integration for iOS Apps</title>
+    <meta name="description" content="Metis Dev adds on-device AI — Apple Foundation Models, Core ML, and MLX — to iOS apps that already ship. No per-request API cost, works offline, nothing leaves the phone. Built by a solo iOS developer with 12+ years of experience.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>M</text></svg>">
 </head>
 <body>
@@ -30,96 +30,114 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1>Crafting Thoughtful Software</h1>
-            <p>We build applications that make a meaningful difference in people's lives.</p>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>On-device AI for iOS apps that already ship.</h1>
+                <p class="hero-lede">I'm Cedric Bazoge, a solo iOS developer with 12+ years of experience. I add on-device AI — Apple's Foundation Models, Core ML, and MLX — to apps indie developers have already built and shipped, so nothing about how your app handles user data has to change.</p>
+                <a href="#contact" class="btn btn-primary">Tell me about your app</a>
+            </div>
+            <ul class="hero-facts">
+                <li>
+                    <strong>No per-request API cost</strong>
+                    <span>Inference runs on the phone, not a server you pay for on every call.</span>
+                </li>
+                <li>
+                    <strong>Works offline</strong>
+                    <span>No network round trip, no dependency on a cloud provider staying up.</span>
+                </li>
+                <li>
+                    <strong>Nothing leaves the phone</strong>
+                    <span>User data and prompts never touch a server you have to secure.</span>
+                </li>
+            </ul>
         </div>
     </header>
 
     <section id="about" class="section about">
-        <div class="container">
-            <h2>About Metis Dev</h2>
+        <div class="container about-grid">
+            <div>
+                <span class="section-label">About</span>
+                <h2>Why on-device AI, specifically</h2>
+            </div>
             <div class="about-content">
-                <p class="lead">Good software doesn't ask for your attention. It just works, right out of the gate.</p>
-                <p>Metis Dev is built on over 12 years of hands-on iOS engineering experience, including work on apps used by millions of people. I started this studio to bring that same level of craft to every project I take on.</p>
-                <p>Named after the Greek goddess of wisdom and skill, Metis Dev reflects how I work: careful thought, real craftsmanship, no shortcuts.</p>
-                <p>The philosophy is simple: build fewer things, but build them well. Every feature, every interaction, every pixel is considered with intention.</p>
-                <a href="https://www.linkedin.com/in/cedric-bazoge-878bb6/" target="_blank" rel="noopener noreferrer" class="about-linkedin">Connect on LinkedIn &rarr;</a>
+                <p class="lead">I've spent 12+ years writing Swift and Objective-C for iOS, including years on apps used by millions of people.</p>
+                <p>Somewhere in there I ended up doing the parts of iOS work nobody volunteers for: low-level performance passes, accessibility work, the stuff that has to be exactly right because it touches every screen in the app.</p>
+                <p>That background is why on-device AI is a natural extension of what I already do, not a pivot into a trend. Core ML and Apple's Foundation Models framework aren't really "AI work" the way a cloud API integration is — they're systems work: memory, threading, model loading, and what happens when a model isn't available on an older device. That's the same category of problem I've been solving in iOS for over a decade.</p>
+                <p>I also run Metis Dev alone. When I say I built exhala end-to-end — design, code, App Store submission, support — by myself, I mean it. There's no team to hand off to. The person who integrates the on-device AI is the same person who ships it and answers for it afterward.</p>
+                <a href="https://www.linkedin.com/in/cedric-bazoge-878bb6/" target="_blank" rel="noopener noreferrer" class="about-linkedin">Connect on LinkedIn</a>
             </div>
         </div>
     </section>
 
     <section id="services" class="section services">
         <div class="container">
-            <h2>iOS Development Services</h2>
-            <p class="services-intro">Beyond our own apps, we partner with teams who need experienced iOS craftsmanship, from new builds to modernizing what you already have.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="6" y="2" width="12" height="20" rx="3"/>
-                            <line x1="6" y1="18" x2="18" y2="18"/>
-                        </svg>
-                    </div>
-                    <h3>iOS Development</h3>
-                    <p>Native iPhone and iPad apps built from the ground up: polished, performant, and ready to ship to the App Store.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M4 12a8 8 0 0 1 14.5-4.5M20 12a8 8 0 0 1-14.5 4.5"/>
-                            <polyline points="18.5 3.5 18.5 7.5 14.5 7.5"/>
-                            <polyline points="5.5 20.5 5.5 16.5 9.5 16.5"/>
-                        </svg>
-                    </div>
-                    <h3>SwiftUI Migration</h3>
-                    <p>Move legacy UIKit codebases to SwiftUI incrementally and safely, modernizing your app without the risk of a full rewrite.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="4" r="2"/>
-                            <path d="M12 8v5m0 0l-4 8m4-8l4 8M4 12h16"/>
-                        </svg>
-                    </div>
-                    <h3>Accessibility Audits</h3>
-                    <p>Comprehensive VoiceOver, Dynamic Type, and Apple accessibility guideline reviews so every user can navigate your app with confidence.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 3l1.8 4.4L18 9l-4.2 1.6L12 15l-1.8-4.4L6 9l4.2-1.6L12 3z"/>
-                            <path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/>
-                        </svg>
-                    </div>
-                    <h3>AI Integration</h3>
-                    <p>Bring on-device and cloud AI features, from smart suggestions to conversational interfaces, into your existing iOS app.</p>
+            <span class="section-label">Services</span>
+            <h2>What I work on</h2>
+            <p class="services-intro">On-device AI integration is the main thing. iOS development, SwiftUI migration, and accessibility audits are real services too, for teams who need the underlying app work done well.</p>
+
+            <div class="service-primary">
+                <span class="service-index">01</span>
+                <div>
+                    <h3>On-Device AI Integration</h3>
+                    <p>I bring Apple's on-device machine learning into your existing app: the Foundation Models framework for language features, Core ML or MLX for custom models — all running on the user's device instead of a server.</p>
+                    <ul class="service-benefits">
+                        <li><strong>No per-request API cost.</strong> Inference happens on the phone, so your cost doesn't scale with usage the way a cloud LLM API does.</li>
+                        <li><strong>Works with no network connection.</strong> The feature keeps working on a plane, in a basement, wherever your users actually are.</li>
+                        <li><strong>Nothing leaves the phone.</strong> No user data or prompts cross the network, which simplifies your privacy story and your App Store review.</li>
+                    </ul>
+                    <p class="service-note">This is what I spend most of my time on, and what I most want to hear about.</p>
                 </div>
             </div>
-            <a href="#contact" class="btn btn-primary services-cta">Start a Project</a>
+
+            <div class="services-secondary">
+                <div class="service-row">
+                    <span class="service-index">02</span>
+                    <div>
+                        <h3>iOS Development</h3>
+                        <p>Native iPhone and iPad apps built from scratch — architecture, UI, and the unglamorous parts like background jobs and App Store submission that decide whether an app actually ships.</p>
+                    </div>
+                </div>
+                <div class="service-row">
+                    <span class="service-index">03</span>
+                    <div>
+                        <h3>SwiftUI Migration</h3>
+                        <p>Move a UIKit codebase to SwiftUI a screen at a time, without freezing feature work or betting the app on a rewrite that doesn't ship.</p>
+                    </div>
+                </div>
+                <div class="service-row">
+                    <span class="service-index">04</span>
+                    <div>
+                        <h3>Accessibility Audits</h3>
+                        <p>A pass through VoiceOver, Dynamic Type, and Apple's accessibility guidelines, with a specific list of what to fix, not just a score.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary services-cta">Tell me about your app</a>
         </div>
     </section>
 
     <section id="work" class="section work">
         <div class="container">
-            <h2>Our Work</h2>
+            <span class="section-label">Work</span>
+            <h2>What I ship without a team behind me</h2>
+            <p class="work-frame">exhala is a breathing app I designed, built, and shipped by myself: every screen, every haptic pattern, the App Store listing, the support inbox. I'm not showing it off as a product on sale — I'm showing it as evidence of what one person can take from an idea to a finished App Store release.</p>
             <div class="project-card">
                 <div class="project-visual">
-                    <img src="Exhale_icon_dark_blck_border.png" alt="exhala app icon" class="app-icon">
+                    <img src="Exhale_icon_dark_blck_border.png" alt="exhala app icon: a stylized breathing/wave symbol on a dark rounded-square background" class="app-icon">
                 </div>
                 <div class="project-info">
-                    <span class="project-label">iOS App</span>
+                    <span class="project-label">Shipped solo, iOS</span>
                     <h3>exhala</h3>
                     <p class="project-tagline">Find your calm through intentional breathing.</p>
-                    <p>We breathe 20,000 times a day without thinking about it. But small changes to how we breathe can make a big difference in how we feel.</p>
+                    <p>We breathe 20,000 times a day without thinking about it. Small changes to how we breathe can make a real difference in how we feel — and building that meant getting the design, the pacing, and the App Store logistics right without anyone else to catch what I missed.</p>
                     <ul class="feature-list">
                         <li>Science-backed breathing exercises</li>
-                        <li>Beautiful, calming visual guidance</li>
                         <li>Haptic-guided pacing so you can breathe with your eyes closed, no screen needed</li>
                         <li>Techniques for stress, sleep, and focus</li>
                     </ul>
                     <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=6758587096" class="btn btn-secondary app-store-btn">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
                             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                         </svg>
                         Download on App Store
@@ -130,10 +148,29 @@
     </section>
 
     <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p class="contact-text">Have a question or want to work together? We'd love to hear from you.</p>
-            <a href="mailto:hello@metisdev.com" class="contact-email">hello@metisdev.com</a>
+        <div class="container contact-grid">
+            <div>
+                <span class="section-label">Contact</span>
+                <h2>Tell me about your app</h2>
+                <p class="contact-text">Tell me what your app does and where you want on-device AI to fit. I read every message myself and reply personally.</p>
+                <p class="contact-email-fallback">Prefer email? Reach me directly at <a href="mailto:hello@metisdev.com" class="contact-email">hello@metisdev.com</a>.</p>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-field">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="contact-project">Your app, in one line</label>
+                    <textarea id="contact-project" name="project" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">Send</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
         </div>
     </section>
 
